@@ -1,9 +1,13 @@
 'use strict';
+/*jslint indent: false */
 
 angular.module('globalizeAngularFullstackApp')
   .controller('NavbarCtrl', function ($scope, $location) {
+    
+    //var Globalize = require('globalize');
+
     $scope.menu = [{
-      'title': 'Home',
+      'title': 'Home', // Globalize.localize('buttonHome')
       'link': '/'
     }];
     

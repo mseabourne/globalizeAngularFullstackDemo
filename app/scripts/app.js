@@ -1,4 +1,5 @@
 'use strict';
+/*jslint indent: false */
 
 angular.module('globalizeAngularFullstackApp', [
   'ngCookies',
@@ -15,6 +16,7 @@ angular.module('globalizeAngularFullstackApp', [
       .otherwise({
         redirectTo: '/'
       });
-      
+    
     $locationProvider.html5Mode(true);
   });
+

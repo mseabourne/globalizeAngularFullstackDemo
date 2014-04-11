@@ -27,3 +27,11 @@ app.listen(config.port, function () {
 
 // Expose app
 exports = module.exports = app;
+
+var Globalize = require('globalize');
+Globalize.addCultureInfo( 'en-CA', {
+    messages: {
+        buttonHome: 'Home, eh!'
+    } 
+});
+Globalize.culture('en-CA');
